@@ -7,7 +7,7 @@
     @apply text-[#414040] text-sm  font-normal md:px-0 px-3;
   }
   &--title {
-    @apply md:text-2xl  md:px-0 px-3  text-[22px] font-bold pr-0 md:pr-14  mt-1;
+    @apply md:text-2xl   md:px-0 px-3   leading-6 md:leading-[30px] text-[22px] font-bold pr-0 md:pr-14  mt-1;
   }
   &--des {
     @apply md:text-[16px]  md:px-0 px-3 pr-0 md:pr-14 text-[15px] font-semibold mt-2;
