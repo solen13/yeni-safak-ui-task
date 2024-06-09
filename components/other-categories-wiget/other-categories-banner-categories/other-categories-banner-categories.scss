@@ -1,0 +1,19 @@
+.other-categories-banner-categories {
+  @apply flex justify-between container  mx-auto;
+  &__list {
+    overflow: hidden !important;
+    @apply flex gap-4;
+    &--item {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      @apply border-2 border-[#8E8E8E] px-3 py-1 rounded font-bold;
+    }
+    &--active {
+      @apply bg-[#CD0002] text-white border-none;
+    }
+  }
+  &__button-content {
+    background: linear-gradient(158deg, #484848.59%, #000000 65.76%);
+    @apply md:flex hidden bg-black  w-16 text-white px-1 rounded border-2 py-1 border-[#F2F2F2] text-[8px]  items-center;
+  }
+}

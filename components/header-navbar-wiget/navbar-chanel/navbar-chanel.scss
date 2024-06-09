@@ -1,0 +1,27 @@
+.navbar-chanel {
+  @apply w-full h-8  lg:bg-[#720000] bg-transparent;
+  &__content {
+    @apply container flex justify-between items-center gap-6 mx-auto h-full;
+  }
+  &__time {
+    white-space: nowrap; /* alt satıra inme */
+    overflow: hidden; /* taşan kısımları gizle */
+    text-overflow: ellipsis;
+    @apply text-[#ffffff76] text-[10px];
+  }
+  &__list {
+    @apply lg:flex hidden  text-[#ffffff3a];
+    li {
+      white-space: nowrap; /* alt satıra inme */
+      overflow: hidden; /* taşan kısımları gizle */
+      text-overflow: ellipsis;
+      @apply flex  items-center justify-center text-[10px];
+    }
+    &--icon {
+      @apply mx-3;
+    }
+  }
+  &__icon {
+    @apply ml-8  lg:flex hidden;
+  }
+}

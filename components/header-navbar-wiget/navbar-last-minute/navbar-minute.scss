@@ -1,0 +1,13 @@
+.navbar-last-minute {
+  @apply container mx-auto bg-[#ECECEC] h-[35px] flex items-center  pl-2  mt-3  sm:rounded-t-lg  overflow-hidden;
+  &--icon {
+  }
+  &__text-list {
+    &--text {
+      white-space: nowrap; /* alt satıra inme */
+      overflow: hidden; /* taşan kısımları gizle */
+      text-overflow: ellipsis;
+      @apply text-black font-semibold;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.navbar-setting {
+  @apply container mx-auto  flex justify-between pt-2 px-2 lg:px-0;
+  &__right {
+    @apply flex;
+    &--menu-button {
+      @apply text-white font-bold mr-2;
+    }
+    &--site-name {
+      @apply text-white text-3xl font-bold lg:ml-0  sm:ml-[100%] ml-0;
+    }
+    &--lang {
+      @apply items-center ml-4 flex;
+      .lang__list {
+        &__edisyon {
+          @apply text-white text-[10px] font-bold mr-1 lg:flex hidden;
+        }
+        &__flag-list {
+          @apply flex;
+
+          &--content {
+            @apply justify-center items-center px-1 py-[1px] lg:flex hidden;
+
+            &--flag-image {
+              @apply w-4 h-3;
+            }
+            &--flag-name {
+              @apply text-[10px] text-white ml-1 font-bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__left {
+    @apply flex justify-center items-center text-white font-bold;
+    &__content {
+      @apply lg:flex hidden items-center;
+    }
+    &--responsive-user {
+      @apply ml-2 lg:hidden flex;
+    }
+
+    .lang__list__flag-list__content-responsive {
+      @apply lg:hidden flex;
+      &--flag-image {
+        @apply w-6 h-6;
+      }
+      &--flag-name {
+        @apply text-white flex flex-col ml-1;
+      }
+      &--edisyon {
+        @apply text-[5px];
+      }
+      &--contry {
+        @apply text-[10px];
+      }
+    }
+  }
+}
+.active {
+  @apply rounded bg-[#0000006f] block;
+}

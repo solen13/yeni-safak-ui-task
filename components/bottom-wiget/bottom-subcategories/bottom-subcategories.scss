@@ -1,0 +1,25 @@
+.bottom-subcategories {
+  margin-top: -30px;
+  z-index: 99999;
+
+  @apply w-[80%] md:container  mx-auto bg-white rounded  p-4;
+  &__list {
+    overflow: hidden !important;
+    height: 140px;
+    @apply grid grid-cols-3 sm:grid-cols-6   col-span-1 gap-4;
+    &__item {
+      width: 160px !important;
+      height: 100px !important;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      background: #000;
+      @apply relative rounded;
+      &--image {
+        @apply w-full h-full;
+      }
+      &--text {
+        @apply absolute bottom-0 mb-[25%] ml-[30%] bg-black  rounded text-white px-2;
+      }
+    }
+  }
+}

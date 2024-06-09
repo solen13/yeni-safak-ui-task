@@ -1,0 +1,33 @@
+.recommeneded-list {
+  @apply md:flex hidden w-[40%] pb-2 border  flex-col justify-between border-[#EAEAEA] bg-white rounded;
+  &__header {
+    @apply flex justify-between items-center h-[68px] pl-4;
+    &--left-image {
+    }
+    &--right-image {
+      @apply w-2/4 h-full object-cover;
+    }
+  }
+  &__list {
+    @apply px-4 mt-2 flex flex-col;
+    &__item {
+      @apply flex h-[104px] mt-4 border border-[#F68700] rounded w-full;
+      &--image {
+        @apply h-full;
+      }
+      &--text {
+        @apply text-base text-[#17191A] font-semibold p-2;
+      }
+    }
+    &__item:hover {
+      @apply border-[3px];
+    }
+  }
+  &__button {
+    @apply px-3;
+    &--item {
+      background: linear-gradient(158deg, #f68700 14.59%, #f67600 65.76%);
+      @apply w-full rounded-full py-1 mt-3 text-white font-semibold;
+    }
+  }
+}

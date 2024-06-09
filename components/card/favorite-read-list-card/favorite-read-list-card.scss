@@ -1,0 +1,21 @@
+.favorite-read-list-card {
+  @apply lg:block hidden border bg-white border-[#EAEAEA] w-[440px] md:mx-0 mx-auto  rounded-[2px];
+  &__head {
+    @apply text-lg font-black px-5 pt-2;
+    hr {
+      @apply bg-[#000000] py-[3px] rounded;
+    }
+  }
+  &__list {
+    @apply flex flex-col;
+    &__item {
+      @apply flex justify-between px-5 items-center border-t border-[#EAEAEA] h-[92px];
+      &--text {
+        @apply text-[#242526] font-semibold;
+      }
+      &--num {
+        @apply text-[#C1C4C9] text-[50px] font-semibold;
+      }
+    }
+  }
+}

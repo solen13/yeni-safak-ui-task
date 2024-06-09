@@ -1,0 +1,15 @@
+.other-categories-banner-news {
+  @apply w-full md:w-[70%];
+  &--image {
+    @apply w-full h-[212px] md:h-[418px] mb-2;
+  }
+  &--date {
+    @apply text-[#414040] text-sm  font-normal;
+  }
+  &--title {
+    @apply md:text-2xl  text-[22px] font-bold pr-0 md:pr-14  mt-1;
+  }
+  &--des {
+    @apply md:text-[16px] pr-0 md:pr-14 text-[15px] font-semibold mt-2;
+  }
+}

@@ -1,0 +1,29 @@
+.categories-card {
+  @apply flex justify-between bg-white items-center px-2  mx-auto
+  border border-[#EBEBEB]  w-[92%] mt-5 
+  sm:container rounded h-[55px];
+  &--list {
+    @apply flex;
+    li {
+      @apply px-1 py-0 sm:px-3 sm:py-1 rounded  text-[18px] font-bold;
+      &:hover {
+        @apply bg-[#E6E6E6];
+      }
+    }
+    .responsive-hidden-mobil {
+      @apply sm:hidden md:hidden lg:block hidden;
+    }
+    .responsive-hidden-tablet {
+      @apply sm:hidden md:block hidden;
+    }
+    .active-categori {
+      @apply bg-[#E6E6E6];
+    }
+  }
+  &--rss {
+    @apply flex gap-2;
+    span {
+      @apply font-bold md:block hidden;
+    }
+  }
+}

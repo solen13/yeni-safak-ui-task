@@ -1,0 +1,62 @@
+.news-fix-card {
+  @apply border border-[#E6E6E6] w-full md:w-[60%] rounded bg-white;
+  &__head {
+    @apply pt-2 flex justify-between items-center px-3;
+    &--categori {
+      @apply text-lg font-bold;
+      hr {
+        @apply bg-[#CC0002] py-[3px] mt-1;
+      }
+    }
+  }
+  &__image-content {
+    &--image {
+      @apply w-full  h-[212px] md:h-[344px];
+    }
+  }
+  &__button-content {
+    @apply flex justify-between px-4 mt-2;
+    &--left {
+      @apply flex gap-4;
+    }
+    &--right {
+      @apply flex gap-4;
+    }
+  }
+  &__comment-list {
+    @apply text-sm font-semibold mt-2 px-6 flex relative;
+    &--image {
+      @apply w-[22px] h-[22px] rounded-full border border-white object-cover;
+    }
+    &--image:first-child {
+      @apply absolute left-0 ml-3;
+    }
+  }
+  &__text {
+    @apply px-4;
+    &--title {
+      @apply text-xl font-black mt-1;
+    }
+    &--des {
+      @apply font-semibold mt-1;
+    }
+  }
+  &__all-button {
+    @apply px-4 font-semibold text-[#8D8D8D] mt-1;
+    svg {
+      @apply pb-[3px];
+    }
+  }
+  &__comment-write {
+    @apply border-t border-[#EBEBEB] h-[61px] flex justify-between items-center px-4;
+    &--profile {
+      @apply w-7 h-7 rounded-full object-cover mr-2;
+    }
+    &--input {
+      @apply w-full;
+    }
+    &--send-button {
+      @apply text-sm text-[#bbbbbb9d] font-semibold;
+    }
+  }
+}

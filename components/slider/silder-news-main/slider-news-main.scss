@@ -1,0 +1,76 @@
+.slider-news-main {
+  @apply border flex flex-col justify-between
+   border-[#EAEAEA] 
+   bg-white
+  container md:w-[620px]  
+     rounded-[2px]  h-[500px] md:h-[735px];
+  &__header {
+    white-space: nowrap; /* alt satıra inme */
+    overflow: hidden !important; /* taşan kısımları gizle */
+    text-overflow: ellipsis;
+    @apply flex justify-start items-center
+          text-[#747474] text-lg font-bold 
+          px-3 md:pt-6  pt-4 md:pb-2 pb-4;
+
+    &--active {
+      @apply text-[#262626];
+      hr {
+        @apply bg-[#CC0002] py-[3px] rounded;
+      }
+    }
+  }
+  &__main {
+    @apply md:mb-[50px];
+    &__container {
+      @apply relative;
+      &--left-button {
+        @apply bg-white px-2 py-1 rounded md:block hidden;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: 10px;
+        margin-bottom: 60%;
+      }
+      &--right-button {
+        @apply bg-white px-2 py-1  rounded md:block hidden;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-right: 10px;
+        margin-bottom: 60%;
+      }
+    }
+  }
+  &__slider-number {
+    @apply md:flex  hidden border-t border-[#E6E6E6] px-3  justify-between py-4;
+    &__list {
+      @apply flex gap-1;
+      &--item {
+        @apply bg-[#F2F2F2] px-1 pb-[13px] font-bold rounded text-[8px];
+      }
+      &--active {
+        background: linear-gradient(158deg, #484848.59%, #000000 65.76%);
+        @apply text-white;
+      }
+    }
+    &__button-content {
+      @apply flex gap-[2px]  ml-2;
+      &--button {
+        background: linear-gradient(158deg, #484848.59%, #000000 65.76%);
+        @apply text-white px-1 rounded border-2 border-[#F2F2F2] text-[8px] flex items-center;
+      }
+    }
+  }
+  &__slider-number-responsive {
+    @apply md:hidden flex border-t border-[#E6E6E6] px-3  justify-between py-2 mt-3;
+    &__list {
+      @apply flex justify-center  w-full;
+      &--item {
+      }
+      &--button {
+        clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+        @apply bg-[#CD0002] pl-2 pr-5 text-white font-semibold py-1;
+      }
+    }
+  }
+}

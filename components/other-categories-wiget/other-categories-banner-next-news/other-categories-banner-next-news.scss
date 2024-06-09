@@ -1,0 +1,21 @@
+.other-categories-banner-next-news {
+  @apply w-full md:w-[30%];
+  &__list {
+    @apply flex flex-col border-l border-[#CCCACA];
+    &--item {
+      @apply md:flex hidden relative text-[15px] font-semibold px-4 py-5 border-t border-[#CCCACA];
+    }
+    &--active {
+      @apply flex md:mt-0 mt-2 bg-[#C2C2C2] border-none;
+    }
+    &--active::before {
+      content: '';
+      position: absolute;
+      background-color: #cd0002;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      @apply w-2;
+    }
+  }
+}
