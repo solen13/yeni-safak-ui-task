@@ -1,5 +1,5 @@
 .bottom-subscriber-banner {
-  @apply w-full bg-[#0F17B7] py-12;
+  @apply w-full bg-[#0F17B7] pt-2 pb-14 md:py-12;
 
   &__container {
     @apply flex container justify-start items-center gap-5  mx-auto md:px-0 px-4;
@@ -8,7 +8,7 @@
     }
     &__content {
       &--title {
-        @apply text-2xl text-white font-black  md:w-[70%];
+        @apply text-xl md:text-2xl text-white font-medium md:font-black  md:w-[70%];
       }
       &__inputs {
         @apply mt-4 flex gap-3;
@@ -24,7 +24,7 @@
         }
       }
       &__cookie-text {
-        @apply text-white md:w-[90%] mt-3;
+        @apply text-white md:w-[90%] text-[10px] mt-3;
       }
     }
   }

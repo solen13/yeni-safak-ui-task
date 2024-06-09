@@ -2,7 +2,7 @@
   margin-top: -30px;
   z-index: 99999;
 
-  @apply w-[80%] md:container  mx-auto bg-white rounded  p-4;
+  @apply w-[90%] md:container  mx-auto bg-white rounded  p-4;
   &__list {
     @apply flex gap-3 overflow-x-scroll md:overflow-hidden;
     &__item {
