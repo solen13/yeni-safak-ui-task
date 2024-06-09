@@ -1,14 +1,11 @@
 <template>
   <div class="slider-news-main">
     <div class="slider-news-main__header">
-      <span class="slider-news-main__header--active"
-        >Günün Manşetleri
-        <hr width="50" />
-      </span>
+      <span class="slider-news-main__header--active">Günün Manşetleri </span>
       <Icon
         class="mx-7"
         name="material-symbols-light:radio-button-unchecked"
-        size="9"
+        size="5"
         color="#747474"
       />
       <span>Basılı Gazete Haberleri</span>

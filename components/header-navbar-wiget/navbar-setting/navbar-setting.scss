@@ -1,12 +1,12 @@
 .navbar-setting {
   @apply container mx-auto  flex justify-between pt-2 px-2 lg:px-0;
   &__right {
-    @apply flex;
+    @apply flex items-center;
     &--menu-button {
-      @apply text-white font-bold mr-2;
+      @apply text-white font-bold mr-4;
     }
     &--site-name {
-      @apply text-white text-3xl font-bold lg:ml-0  sm:ml-[100%] ml-0;
+      @apply text-white text-3xl font-bold lg:ml-0   ml-0;
     }
     &--lang {
       @apply items-center ml-4 flex;
@@ -18,7 +18,7 @@
           @apply flex;
 
           &--content {
-            @apply justify-center items-center px-1 py-[1px] lg:flex hidden;
+            @apply justify-center items-center px-1 py-[1px] lg:flex hidden hover:bg-[#0000006f] cursor-pointer;
 
             &--flag-image {
               @apply w-4 h-3;
@@ -30,16 +30,6 @@
         }
       }
     }
-  }
-  &__left {
-    @apply flex justify-center items-center text-white font-bold;
-    &__content {
-      @apply lg:flex hidden items-center;
-    }
-    &--responsive-user {
-      @apply ml-2 lg:hidden flex;
-    }
-
     .lang__list__flag-list__content-responsive {
       @apply lg:hidden flex;
       &--flag-image {
@@ -54,6 +44,15 @@
       &--contry {
         @apply text-[10px];
       }
+    }
+  }
+  &__left {
+    @apply flex justify-center items-center text-white font-bold;
+    &__content {
+      @apply lg:flex hidden items-center;
+    }
+    &--responsive-user {
+      @apply ml-2 lg:hidden flex;
     }
   }
 }

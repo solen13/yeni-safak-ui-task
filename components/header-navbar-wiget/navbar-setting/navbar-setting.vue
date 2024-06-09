@@ -26,8 +26,6 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="navbar-setting__left">
       <div class="lang__list__flag-list__content-responsive">
         <img
           class="lang__list__flag-list__content-responsive--flag-image"
@@ -43,7 +41,8 @@
           </span>
         </span>
       </div>
-
+    </div>
+    <div class="navbar-setting__left">
       <div class="navbar-setting__left__content">
         <button>
           <Icon name="ic:baseline-search" size="24" color="white" />

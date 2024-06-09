@@ -1,7 +1,7 @@
 .main-cuff-news {
   @apply w-full relative;
   &__content {
-    @apply flex 2xl:justify-between justify-between   container mx-auto  mt-4;
+    @apply flex 2xl:justify-between justify-between gap-3 container mx-auto  mt-4;
     &--advert-left {
       @apply lg:block hidden absolute left-0;
     }

@@ -1,15 +1,23 @@
 .favorite-read-list-card {
-  @apply lg:block hidden border bg-white border-[#EAEAEA] w-[440px] md:mx-0 mx-auto  rounded-[2px];
+  @apply lg:block hidden  border bg-white border-[#EAEAEA] w-[440px] md:mx-0 mx-auto  rounded-[2px];
   &__head {
-    @apply text-lg font-black px-5 pt-2;
-    hr {
-      @apply bg-[#000000] py-[3px] rounded;
+    @apply relative text-lg font-black px-5 pt-2 pb-2;
+    span::before {
+      content: '';
+      position: absolute;
+      background-color: #cc0002;
+      bottom: 0;
+      left: 0;
+      height: 7px;
+      width: 40px;
+      @apply rounded-t ml-3;
     }
   }
+
   &__list {
     @apply flex flex-col;
     &__item {
-      @apply flex justify-between px-5 items-center border-t border-[#EAEAEA] h-[92px];
+      @apply flex justify-between px-5 items-center border-t border-[#EAEAEA] h-[92px] cursor-pointer hover:bg-[#0000006f];
       &--text {
         @apply text-[#242526] font-semibold;
       }

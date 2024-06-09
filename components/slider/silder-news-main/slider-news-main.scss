@@ -1,26 +1,32 @@
 .slider-news-main {
-  @apply border flex flex-col justify-between
+  @apply border flex flex-col 
    border-[#EAEAEA] 
    bg-white
   container md:w-[620px]  
-     rounded-[2px]  h-[500px] md:h-[735px];
+     rounded-[2px]  h-full;
   &__header {
     white-space: nowrap; /* alt satıra inme */
     overflow: hidden !important; /* taşan kısımları gizle */
     text-overflow: ellipsis;
-    @apply flex justify-start items-center
+
+    @apply flex justify-start items-center relative
           text-[#747474] text-lg font-bold 
           px-3 md:pt-6  pt-4 md:pb-2 pb-4;
 
     &--active {
       @apply text-[#262626];
-      hr {
-        @apply bg-[#CC0002] py-[3px] rounded;
-      }
+    }
+    &--active::before {
+      content: '';
+      position: absolute;
+      background-color: #cc0002;
+      bottom: 0;
+      height: 7px;
+      width: 40px;
+      @apply rounded-t;
     }
   }
   &__main {
-    @apply md:mb-[50px];
     &__container {
       @apply relative;
       &--left-button {
@@ -42,13 +48,17 @@
     }
   }
   &__slider-number {
-    @apply md:flex  hidden border-t border-[#E6E6E6] px-3  justify-between py-4;
+    @apply md:flex  hidden border-t border-[#E6E6E6] px-3  mt-6 justify-between py-4;
     &__list {
-      @apply flex gap-1;
+      @apply flex items-center gap-1;
       &--item {
-        @apply bg-[#F2F2F2] px-1 pb-[13px] font-bold rounded text-[8px];
+        @apply bg-[#F2F2F2] px-1 pb-[13px] font-bold rounded text-[8px] w-[14px] cursor-pointer;
       }
       &--active {
+        background: linear-gradient(158deg, #484848.59%, #000000 65.76%);
+        @apply text-white;
+      }
+      &--item:hover {
         background: linear-gradient(158deg, #484848.59%, #000000 65.76%);
         @apply text-white;
       }

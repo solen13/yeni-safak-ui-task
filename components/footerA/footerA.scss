@@ -58,9 +58,9 @@
     }
   }
   &__contack {
-    @apply container mx-auto px-2 flex flex-col md:flex-row  justify-between mt-3 text-sm;
+    @apply container mx-auto px-2 flex flex-col md:flex-row  justify-between mt-6 text-sm;
     div {
-      @apply flex flex-col md:flex-row   gap-3 mt-2 md:mt-0;
+      @apply flex flex-col md:flex-row  gap-3 mt-2 md:mt-0;
     }
   }
 }

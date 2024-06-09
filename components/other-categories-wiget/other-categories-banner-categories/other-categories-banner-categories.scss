@@ -1,19 +1,33 @@
 .other-categories-banner-categories {
-  @apply flex justify-between container  mx-auto;
+  @apply flex justify-between container relative  mx-auto;
   &__list {
     overflow: hidden !important;
     @apply flex gap-4;
     &--item {
       white-space: nowrap;
       text-overflow: ellipsis;
-      @apply border-2 border-[#8E8E8E] px-3 py-1 rounded font-bold;
+      @apply border-2  border-[#8E8E8E] px-3 py-1 rounded font-bold hover:bg-[#CD0002] hover:text-white cursor-pointer;
     }
     &--active {
-      @apply bg-[#CD0002] text-white border-none;
+      @apply bg-[#CD0002] text-white border-none md:mr-0 ml-3;
     }
   }
   &__button-content {
     background: linear-gradient(158deg, #484848.59%, #000000 65.76%);
-    @apply md:flex hidden bg-black  w-16 text-white px-1 rounded border-2 py-1 border-[#F2F2F2] text-[8px]  items-center;
+    @apply md:flex hidden bg-black  w-16 text-white px-1 rounded border-2 py-1 border-[#F2F2F2] text-[8px]  items-center cursor-pointer;
+  }
+  &__button-content::after {
+    content: '';
+    width: 30px;
+    height: 34px;
+    position: absolute;
+    right: 0;
+    margin-right: 60px;
+
+    background: linear-gradient(
+      270deg,
+      #dfdfdf 45.5%,
+      rgba(223, 223, 223, 0) 100%
+    );
   }
 }

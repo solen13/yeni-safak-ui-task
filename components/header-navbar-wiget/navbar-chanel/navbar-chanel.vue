@@ -18,8 +18,8 @@
               v-if="index != 0"
               class="navbar-chanel__list--icon"
               name="material-symbols-light:radio-button-unchecked"
-              size="9"
-              color="#ffffff23"
+              size="4"
+              color="rgba(255, 255, 255, 0.10)"
             />
             <span>{{ item }}</span>
           </li>
@@ -49,7 +49,6 @@ const chanel = ref([
   'Z RAPORU',
   'MECRA',
   'CİNS',
-  'MECRA',
 ]);
 </script>
 <style lang="scss" src="./navbar-chanel.scss"></style>

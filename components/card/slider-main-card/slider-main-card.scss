@@ -6,22 +6,23 @@
     &--slogan {
       margin-top: -15px !important;
       position: relative;
-
+      z-index: 99;
       span {
         @apply bg-[#CD0002] px-2 py-1 text-white font-bold ml-5 rounded z-30;
       }
     }
     &--slogan::after {
       content: '';
-      content: '';
-      @apply w-full bg-gray-400 h-3 mt-10 mr-2;
+
+      width: calc(100% - 20px);
+      left: 20px;
+      z-index: -1;
       position: absolute;
       background-color: #cd0002;
       height: 3px;
       bottom: 0;
       margin-bottom: 8px;
       border-top: 5px solid #cd0002;
-      @apply w-[40%] sm:w-[66%];
     }
   }
   &--title {

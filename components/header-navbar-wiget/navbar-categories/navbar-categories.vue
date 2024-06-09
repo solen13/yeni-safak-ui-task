@@ -21,7 +21,9 @@
       <nuxt-link class="navbar-categories__list--responsive-hidden" to="/"
         >Gündem</nuxt-link
       >
-      <nuxt-link to="/">...</nuxt-link>
+      <button class="hover:bg-[#0000002e] rounded">
+        <Icon name="heroicons:ellipsis-horizontal" color="white" size="30" />
+      </button>
     </div>
     <div class="navbar-categories__live">
       <nuxt-link class="navbar-categories__live__button" to="/">

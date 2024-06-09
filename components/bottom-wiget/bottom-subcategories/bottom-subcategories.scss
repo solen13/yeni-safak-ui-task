@@ -4,21 +4,15 @@
 
   @apply w-[80%] md:container  mx-auto bg-white rounded  p-4;
   &__list {
-    overflow: hidden !important;
-    height: 140px;
-    @apply grid grid-cols-3 sm:grid-cols-6   col-span-1 gap-4;
+    @apply flex gap-3 overflow-x-scroll md:overflow-hidden;
     &__item {
-      width: 160px !important;
-      height: 100px !important;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      background: #000;
-      @apply relative rounded;
+      flex-shrink: 0;
+      @apply relative rounded md:w-[160px] h-[100px] w-[104px] basis-[106] md:basis-[160px];
       &--image {
         @apply w-full h-full;
       }
       &--text {
-        @apply absolute bottom-0 mb-[25%] ml-[30%] bg-black  rounded text-white px-2;
+        @apply absolute bottom-0  mb-[30%]  md:mb-[25%] ml-[30%] bg-black  rounded text-white px-2;
       }
     }
   }

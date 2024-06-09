@@ -4,36 +4,44 @@
       <li
         class="other-categories-banner-categories__list--item other-categories-banner-categories__list--active"
       >
-        Popüler
+        <button>Popüler</button>
       </li>
       <li class="other-categories-banner-categories__list--item">
         Tabuta Sığmayanlar
-      </li>
-      <li class="other-categories-banner-categories__list--item">Check Z</li>
-      <li class="other-categories-banner-categories__list--item">
-        Söz Milletin
+        <button>Popüler</button>
       </li>
       <li class="other-categories-banner-categories__list--item">
-        Savunmadaki Türkler
+        <button>Check Z</button>
       </li>
       <li class="other-categories-banner-categories__list--item">
-        Saklı Kalanlar
+        <button>Söz Milletin</button>
+      </li>
+      <li class="other-categories-banner-categories__list--item">
+        <button>Savunmadaki Türkler</button>
+      </li>
+      <li class="other-categories-banner-categories__list--item">
+        <button>Saklı Kalan</button>
       </li>
       <li class="other-categories-banner-categories__list--item">Savunma</li>
       <li class="other-categories-banner-categories__list--item">
         Tabuta Sığmayanlar
-      </li>
-      <li class="other-categories-banner-categories__list--item">Check Z</li>
-      <li class="other-categories-banner-categories__list--item">
-        Söz Milletin
+        <button>Tabuta Sığmayanlar</button>
       </li>
       <li class="other-categories-banner-categories__list--item">
-        Savunmadaki Türkler
+        <button>Check Z</button>
       </li>
       <li class="other-categories-banner-categories__list--item">
-        Saklı Kalanlar
+        <button>Söz Milletin</button>
       </li>
-      <li class="other-categories-banner-categories__list--item">Savunma</li>
+      <li class="other-categories-banner-categories__list--item">
+        <button>Savunmadaki Türkler</button>
+      </li>
+      <li class="other-categories-banner-categories__list--item">
+        <button>Saklı Kalanlar</button>
+      </li>
+      <li class="other-categories-banner-categories__list--item">
+        <button>Savunma</button>
+      </li>
     </ul>
 
     <div class="other-categories-banner-categories__button-content">

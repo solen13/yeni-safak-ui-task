@@ -1,8 +1,7 @@
 <template>
   <div class="favorite-read-list-card">
     <div class="favorite-read-list-card__head">
-      Çok Okunan / Çok İzlenen
-      <hr width="40" />
+      <span>Çok Okunan / Çok İzlenen</span>
     </div>
     <ul class="favorite-read-list-card__list">
       <li class="favorite-read-list-card__list__item" v-for="item in 7">
