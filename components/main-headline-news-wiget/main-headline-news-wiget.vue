@@ -3,7 +3,7 @@
     <categories-card />
     <div class="main-cuff-news__content">
       <img
-        class="main-cuff-news__content--advert-left"
+        class="main-cuff-news__content--advert-left  2xl:ml-20"
         src="../../public/reklam.png"
         alt=""
       />
@@ -12,7 +12,7 @@
       <favorite-read-list-card />
 
       <img
-        class="main-cuff-news__content--advert-right"
+        class="main-cuff-news__content--advert-right 2xl:mr-20"
         src="../../public/reklam.png"
         alt=""
       />
